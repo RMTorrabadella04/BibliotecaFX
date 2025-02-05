@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.bibliotecafx.controladores.InicioControlador"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="760.0" prefWidth="892.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecafx.controladores.InicioControlador">
 
-    <Label layoutX="200.0" layoutY="100.0" text="BibliotecaFx" />
-
-    <Button layoutX="200.0" layoutY="150.0" text="Entrar" />
+    <Label alignment="CENTER" layoutX="58.0" layoutY="60.0" prefHeight="65.0" prefWidth="785.0" styleClass="texto-gradiente" text="BIBLIOTECA FX" textAlignment="CENTER" />
+    <Button layoutX="114.0" layoutY="197.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="AUTORES" />
+    <Button layoutX="466.0" layoutY="197.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="LIBROS" />
+    <Button layoutX="114.0" layoutY="468.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="SOCIOS" />
+    <Button layoutX="466.0" layoutY="468.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="PRESTAMOS" />
 
 </AnchorPane>

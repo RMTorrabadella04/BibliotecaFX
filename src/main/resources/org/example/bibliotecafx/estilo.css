@@ -1,0 +1,40 @@
+AnchorPane{
+    -fx-background-color: #d5f1f3;
+}
+
+Button{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;  /* Color del texto */
+    -fx-background-color: #2d878d; /* Gradiente de fondo (cambia la direccion si lo prefieres) */
+    -fx-background-radius: 10px;  /* Bordes redondeados */
+    -fx-padding: 10px;  /* Espaciado interno */
+    -fx-text-fill: #d5f1f3;
+}
+
+Button:hover{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;  /* Color del texto */
+    -fx-background-color: #4eabb1; /* Gradiente de fondo (cambia la direccion si lo prefieres) */
+    -fx-background-radius: 10px;  /* Bordes redondeados */
+    -fx-padding: 10px;  /* Espaciado interno */
+    -fx-text-fill: #d5f1f3;
+}
+
+Button:pressed{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;  /* Color del texto */
+    -fx-background-color: #d5f1f3; /* Gradiente de fondo (cambia la direccion si lo prefieres) */
+    -fx-background-radius: 10px;  /* Bordes redondeados */
+    -fx-padding: 10px;  /* Espaciado interno */
+    -fx-text-fill: #2d878d;
+}
+
+.texto-gradiente {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d878d;  /* Color del texto */
+    -fx-background-color: radial-gradient(center 50% 50%, radius 50%, #8db9bb, #d5f1f3);  /* Gradiente de fondo (cambia la dirección si lo prefieres) */
+    -fx-background-radius: 10px;  /* Bordes redondeados */
+    -fx-padding: 10px;  /* Espaciado interno */
+}
+
