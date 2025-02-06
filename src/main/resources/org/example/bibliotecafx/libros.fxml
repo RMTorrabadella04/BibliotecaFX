@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="760.0" prefWidth="892.0" stylesheets="@css/estiloLibros.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecafx.controladores.librosControlador">
+
+    <Label alignment="CENTER" layoutX="12.0" layoutY="34.0" prefHeight="104.0" prefWidth="870.0" styleClass="titulo" text="GESTIÓN DE LIBROS" />
+
+    <Label layoutX="51.0" layoutY="158.0" prefHeight="34.0" prefWidth="212.0" text="Selecciona el Metodo de Busqueda  --&gt;" />
+    <ComboBox fx:id="menuSeleccionMetodoBusqueda" layoutX="279.0" layoutY="163.0" prefHeight="25.0" prefWidth="212.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="ISBN" />
+                <String fx:value="Título" />
+                <String fx:value="Autor" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <TextField fx:id="busquedaTextField" layoutX="51.0" layoutY="213.0" prefHeight="25.0" prefWidth="568.0" promptText="Escribe para buscar..." />
+    <Button layoutX="639.0" layoutY="213.0" onAction="#buscarLibro" text="Buscar" />
+    <Button layoutX="709.0" layoutY="213.0" text="Listar todos los Libros" onAction="#listarLibros"/>
+
+   <TableView fx:id="tablaLibros" layoutX="51.0" layoutY="261.0" prefHeight="462.0" prefWidth="790.0"/>
+
+   <Button layoutX="619.0" layoutY="163.0" onAction="#modificarLibro" prefHeight="25.0" prefWidth="106.0" text="Modificar" fx:id="modificarButton"/>
+   <Button layoutX="735.0" layoutY="163.0" onAction="#eliminarLibro" prefHeight="25.0" prefWidth="106.0" text="Eliminar" fx:id="eliminarButton"/>
+   <Button layoutX="504.0" layoutY="163.0" onAction="#crearLibro" prefHeight="25.0" prefWidth="106.0" text="Crear" fx:id="crearButton"/>
+
+</AnchorPane>

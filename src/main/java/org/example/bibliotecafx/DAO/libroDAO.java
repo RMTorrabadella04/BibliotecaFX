@@ -22,7 +22,7 @@ public interface libroDAO {
     libro findByTitulo(String titulo);
 
     // Buscar libros por autor
-    libro findByAutor(String autor);
+    List<libro>  findByAutor(String autor);
 
     // Listar todos los libros
     List<libro> findAll();

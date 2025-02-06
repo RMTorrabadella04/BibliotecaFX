@@ -1,0 +1,14 @@
+AnchorPane{
+    -fx-background-color: #d5f1f3;
+}
+
+.titulo{
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d878d;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 50%, #8db9bb, #d5f1f3);  /* Gradiente de fondo (cambia la dirección si lo prefieres) */
+    -fx-background-radius: 10px;  /* Bordes redondeados */
+    -fx-padding: 10px;
+}
+
+
