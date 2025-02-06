@@ -2,9 +2,11 @@ package org.example.bibliotecafx.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
-@Table(name = "socio")
-public class socio {
+@Table(name = "socios")
+public class socio implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

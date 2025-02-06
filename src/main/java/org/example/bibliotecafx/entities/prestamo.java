@@ -2,19 +2,21 @@ package org.example.bibliotecafx.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "prestamo")
-public class prestamo {
+public class prestamo implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(nullable = false)
-    private libro libro;
+    private org.example.bibliotecafx.entities.libro libro;
 
     @Column(nullable = false)
-    private socio socio;
+    private org.example.bibliotecafx.entities.socio socio;
 
     private String fechaPrestamo;
 
@@ -22,7 +24,7 @@ public class prestamo {
 
     public prestamo() {}
 
-    public prestamo(libro libro, socio socio, String fechaPrestamo, String fechaDevolucion) {
+    public prestamo(org.example.bibliotecafx.entities.libro libro, org.example.bibliotecafx.entities.socio socio, String fechaPrestamo, String fechaDevolucion) {
         this.libro = libro;
         this.socio = socio;
         this.fechaPrestamo = fechaPrestamo;
@@ -35,13 +37,13 @@ public class prestamo {
 
     public void setId(Integer id) {this.id = id;}
 
-    public libro getLibro() {return libro;}
+    public org.example.bibliotecafx.entities.libro getLibro() {return libro;}
 
-    public void setLibro(libro libro) {this.libro = libro;}
+    public void setLibro(org.example.bibliotecafx.entities.libro libro) {this.libro = libro;}
 
-    public socio getSocio() {return socio;}
+    public org.example.bibliotecafx.entities.socio getSocio() {return socio;}
 
-    public void setSocio(socio socio) {this.socio = socio;}
+    public void setSocio(org.example.bibliotecafx.entities.socio socio) {this.socio = socio;}
 
     public String getFechaPrestamo() {return fechaPrestamo;}
 

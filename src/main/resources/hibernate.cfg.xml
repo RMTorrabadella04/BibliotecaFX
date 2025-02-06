@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 4.0//EN" "http://hibernate.org/dtd/hibernate-configuration-4.0.dtd">
 <hibernate-configuration>
 
     <!-- Configuración de la conexión a la base de datos -->
     <session-factory>
         <!-- Propiedades para la conexión -->
-        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/bibliotecafx</property> <!-- Cambiar el nombre de la base de datos por la mia -->
         <property name="connection.username">root</property> <!-- Cambiar el nombre de usuario por el mio -->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -15,10 +15,10 @@
         <property name="hbm2ddl.auto">update</property> <!-- Puede ser create, update, validate, none -->
 
         <!-- Configuración de la entidad -->
-        <mapping class="org.example.bibliotecafx.entidades.autor" />
-        <mapping class="org.example.bibliotecafx.entidades.libro" />
-        <mapping class="org.example.bibliotecafx.entidades.prestamo" />
-        <mapping class="org.example.bibliotecafx.entidades.socio" />
+        <mapping class="org.example.bibliotecafx.entities.autor" />
+        <mapping class="org.example.bibliotecafx.entities.libro" />
+        <mapping class="org.example.bibliotecafx.entities.prestamo" />
+        <mapping class="org.example.bibliotecafx.entities.socio" />
 
     </session-factory>
 

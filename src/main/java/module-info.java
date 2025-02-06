@@ -16,6 +16,7 @@ module org.example.bibliotecafx {
     opens org.example.bibliotecafx.vistas to javafx.fxml;
     opens org.example.bibliotecafx.controladores to javafx.fxml; // Si tienes controladores también
 
+    opens org.example.bibliotecafx.entities to org.hibernate.orm.core;
     // Exporta el paquete principal
     exports org.example.bibliotecafx.vistas;
     exports org.example.bibliotecafx.controladores;
