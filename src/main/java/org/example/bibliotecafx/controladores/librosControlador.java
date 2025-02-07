@@ -2,20 +2,18 @@ package org.example.bibliotecafx.controladores;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TablePosition;
-import javafx.scene.control.Alert;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import org.example.bibliotecafx.DAO.autorDAOImpl;
 import org.example.bibliotecafx.DAO.libroDAOImpl;
-import javafx.scene.control.TextInputDialog;
 import org.example.bibliotecafx.entities.autor;
 import org.example.bibliotecafx.entities.libro;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -219,5 +217,21 @@ public class librosControlador {
         tablaLibros.getItems().setAll(libros);
     }
 
+    public void irAInicio(ActionEvent actionEvent) throws IOException {
+
+        // Cargar el nuevo archivo FXML para la ventana de libros
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/bibliotecafx/inicio.fxml"));
+
+        // Crear una nueva escena
+        Scene scene = new Scene(loader.load());
+
+        // Obtener la ventana principal (Stage)
+        Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
+
+        // Cambiar la escena a la nueva ventana
+        stage.setScene(scene);
+        stage.show();
+
+    }
 
 }

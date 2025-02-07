@@ -10,7 +10,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="760.0" prefWidth="892.0" stylesheets="@css/estiloLibros.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecafx.controladores.librosControlador">
+<AnchorPane prefHeight="760.0" prefWidth="892.0" stylesheets="@css/estiloSecciones.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecafx.controladores.librosControlador">
 
     <Label alignment="CENTER" layoutX="12.0" layoutY="34.0" prefHeight="104.0" prefWidth="870.0" styleClass="titulo" text="GESTIÓN DE LIBROS" />
 
@@ -33,5 +33,6 @@
    <Button layoutX="619.0" layoutY="163.0" onAction="#modificarLibro" prefHeight="25.0" prefWidth="106.0" text="Modificar" fx:id="modificarButton"/>
    <Button layoutX="735.0" layoutY="163.0" onAction="#eliminarLibro" prefHeight="25.0" prefWidth="106.0" text="Eliminar" fx:id="eliminarButton"/>
    <Button layoutX="504.0" layoutY="163.0" onAction="#crearLibro" prefHeight="25.0" prefWidth="106.0" text="Crear" fx:id="crearButton"/>
+   <Button fx:id="volverButton" layoutX="798.0" layoutY="22.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="69.0" text="EXIT" onAction="#irAInicio" />
 
 </AnchorPane>
