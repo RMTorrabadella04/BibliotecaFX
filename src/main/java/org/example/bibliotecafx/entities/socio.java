@@ -20,6 +20,12 @@ public class socio implements Serializable {
 
     public socio() {}
 
+    public socio(String nombre, String direccion, Integer telefono) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
+
     public socio(Integer id, String nombre, String direccion, Integer telefono) {
         this.id = id;
         this.nombre = nombre;

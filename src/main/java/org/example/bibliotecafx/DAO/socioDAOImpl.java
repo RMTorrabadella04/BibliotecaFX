@@ -38,18 +38,26 @@ public class socioDAOImpl implements socioDAO {
     @Override
     public socio findByNumeroTelefono(Integer telefono) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        socio sociesito = session.get(socio.class, telefono);
+        String hql = "FROM socio WHERE telefono = :telefono";
+        socio sociesito = session.createQuery(hql, socio.class)
+                .setParameter("telefono", telefono)
+                .uniqueResult();  // Devuelve un solo resultado
         session.close();
         return sociesito;
     }
 
+
     @Override
     public socio findByNombre(String nombre) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        socio sociesito = session.get(socio.class, nombre);
+        String hql = "FROM socio WHERE nombre = :nombre";
+        socio sociesito = session.createQuery(hql, socio.class)
+                .setParameter("nombre", nombre)
+                .uniqueResult();  // Devuelve un solo resultado
         session.close();
         return sociesito;
     }
+
 
     @Override
     public List<socio> findAll() {

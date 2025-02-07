@@ -48,4 +48,34 @@ public class InicioControlador {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void irASocios(ActionEvent actionEvent) throws IOException {
+        // Cargar el nuevo archivo FXML para la ventana de libros
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/bibliotecafx/socios.fxml"));
+
+        // Crear una nueva escena
+        Scene scene = new Scene(loader.load());
+
+        // Obtener la ventana principal (Stage)
+        Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
+
+        // Cambiar la escena a la nueva ventana
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void irAPrestamos(ActionEvent actionEvent) throws IOException {
+        // Cargar el nuevo archivo FXML para la ventana de libros
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/bibliotecafx/prestamos.fxml"));
+
+        // Crear una nueva escena
+        Scene scene = new Scene(loader.load());
+
+        // Obtener la ventana principal (Stage)
+        Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
+
+        // Cambiar la escena a la nueva ventana
+        stage.setScene(scene);
+        stage.show();
+    }
 }

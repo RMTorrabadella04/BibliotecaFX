@@ -9,9 +9,9 @@
 
 
 
-    <Button layoutX="114.0" layoutY="197.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="AUTORES" fx:id="autoresButton"  onAction="#irAAutores" />
+    <Button layoutX="114.0" layoutY="197.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="AUTORES" fx:id="autoresButton" onAction="#irAAutores" />
     <Button layoutX="466.0" layoutY="197.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="LIBROS" fx:id="librosButton" onAction="#irALibros"  />
-    <Button layoutX="114.0" layoutY="468.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="SOCIOS" fx:id="sociosButton"/>
-    <Button layoutX="466.0" layoutY="468.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="PRESTAMOS" fx:id="prestamosButton" />
+    <Button layoutX="114.0" layoutY="468.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="SOCIOS" fx:id="sociosButton" onAction="#irASocios"/>
+    <Button layoutX="466.0" layoutY="468.0" mnemonicParsing="false" prefHeight="240.0" prefWidth="317.0" text="PRESTAMOS" fx:id="prestamosButton" onAction="#irAPrestamos" />
 
 </AnchorPane>

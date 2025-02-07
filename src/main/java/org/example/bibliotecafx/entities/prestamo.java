@@ -12,10 +12,12 @@ public class prestamo implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "isbn_libro")
     private org.example.bibliotecafx.entities.libro libro;
 
-    @Column(nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "id_socio")
     private org.example.bibliotecafx.entities.socio socio;
 
     private String fechaPrestamo;
