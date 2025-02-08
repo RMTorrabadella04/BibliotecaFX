@@ -8,11 +8,11 @@
 <AnchorPane prefHeight="760.0" prefWidth="892.0" stylesheets="@css/estiloSecciones.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecafx.controladores.prestamoControlador">
 
     <Label alignment="CENTER" layoutX="12.0" layoutY="34.0" prefHeight="104.0" prefWidth="870.0" styleClass="titulo" text="GESTIÓN DE PRESTAMOS" />
-    <Button layoutX="630.0" layoutY="165.0" onAction="#buscarLibro" text="Buscar Libros Prestados Actualmente" />
-    <Button layoutX="478.0" layoutY="165.0" onAction="#listarLibros" text="Listar todos los Libros" />
+    <Button layoutX="630.0" layoutY="165.0" onAction="#buscarPrestamos" text="Buscar Libros Prestados Actualmente" />
+    <Button layoutX="478.0" layoutY="165.0" onAction="#listarPrestamos" text="Listar todos los Libros" />
 
    <TableView fx:id="tablaPrestamos" layoutX="51.0" layoutY="206.0" prefHeight="517.0" prefWidth="790.0" />
-   <Button fx:id="crearButton" layoutX="51.0" layoutY="165.0" onAction="#crearLibro" prefHeight="25.0" prefWidth="106.0" text="Crear" />
+   <Button fx:id="crearButton" layoutX="51.0" layoutY="165.0" onAction="#crearPrestamo" prefHeight="25.0" prefWidth="106.0" text="Crear" />
    <Button fx:id="volverButton" layoutX="798.0" layoutY="22.0" mnemonicParsing="false" onAction="#irAInicio" prefHeight="35.0" prefWidth="69.0" text="EXIT" />
 
 </AnchorPane>
